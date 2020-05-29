@@ -1,0 +1,45 @@
+{
+  "name": "rn-trader",
+  "version": "1.0.0",
+  "description": "RN trader ERP",
+  "main": "server.js",
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \" npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "Globus Labs",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^1.3.2",
+    "express-rate-limit": "^5.0.0",
+    "helmet": "^3.21.2",
+    "hpp": "^0.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.3.1",
+    "slugify": "^1.3.5",
+    "validator": "^12.0.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^1.19.4"
+  }
+}

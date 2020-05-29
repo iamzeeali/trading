@@ -1,0 +1,35 @@
+.sidebar a {
+  color: #000;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+ul li {
+  padding-bottom: 12px !important;
+}
+
+.fa {
+  color: #292b2c !important;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.6em;
+  text-decoration: none;
+}
+ul ul li {
+  background-color: whitesmoke;
+  padding: 10px 0;
+}
+ul ul a {
+  font-size: 1.1em !important;
+  padding-left: 30px !important;
+}
